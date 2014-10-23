@@ -12,7 +12,7 @@ baltimore <- cbind(baltimore, c(1999,2002,2005,2008))
 png(filename = "plot2.png")
 
 plot(baltimore[,2], baltimore[,1], type = "l", 
-     ylab = expression('Total Emissions - PM '[2.5]), xlab = "Year")
+     ylab = expression('Total Emissions - PM'[2.5]), xlab = "Year")
 title(main = "Baltimore, Maryland")
 
 dev.off()

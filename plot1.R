@@ -11,6 +11,6 @@ total_emissions <- cbind(total_emissions, c(1999,2002,2005,2008))
 png(filename = "plot1.png")
 
 plot(total_emissions[,2], total_emissions[,1], type = "l", 
-     ylab = expression('Total Emissions - PM '[2.5]), xlab = "Year")
+     ylab = expression('Total Emissions - PM'[2.5]), xlab = "Year")
 
 dev.off()
