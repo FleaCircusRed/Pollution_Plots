@@ -2,8 +2,8 @@
 library(ggplot2)
 
 # load data
-#NEI <- readRDS("summarySCC_PM25.rds")
-#SCC <- readRDS("Source_Classification_Code.rds")
+NEI <- readRDS("summarySCC_PM25.rds")
+SCC <- readRDS("Source_Classification_Code.rds")
 
 # Question 4 asks to show data for all coal combustion-related sources
 # I've taken this to mean all sources that's shortname contain coal and
