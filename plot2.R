@@ -16,3 +16,6 @@ plot(baltimore[,2], baltimore[,1], type = "l",
 title(main = "Baltimore, Maryland")
 
 dev.off()
+
+# As you can see in the plot, total emissions have dropped in Baltimore between
+# 1999 - 2008

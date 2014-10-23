@@ -14,3 +14,5 @@ plot(total_emissions[,2], total_emissions[,1], type = "l",
      ylab = expression('Total Emissions - PM'[2.5]), xlab = "Year")
 
 dev.off()
+
+#As you can see from the plot, emissions have dropped between 1999 - 2008

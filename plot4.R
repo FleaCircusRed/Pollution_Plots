@@ -22,8 +22,11 @@ coal_totals <- aggregate(Emissions~year, data=coal_emissions, sum)
 
 #plot and save graph
 p <- ggplot(coal_totals, aes(year, Emissions)) + geom_point() + geom_line() +
-    labs(title="Nationwide Emissions caused by Coal Combustion") + 
+    labs(title="Emissions caused by Coal Combustion") + 
     ylab(expression("Total Emissions PM"[2.5])) +
     xlab("Year")
 
-ggsave("plot4.png", p)
+ggsave("plot4.png", p, width = 4.5, height = 3)
+
+# As shown in the plot Coal combustion emissions dropped slightly between 1999
+# and 2005 and then dropped by about 35% between 2005 and 2008.

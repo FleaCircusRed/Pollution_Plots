@@ -23,7 +23,9 @@ p <- ggplot(totals, aes(year, Emissions, group = type, color = type)
     ylab(expression("Total Emissions PM"[2.5])) +
     xlab("Year")
 
-ggsave("plot3.png", p)
+ggsave("plot3.png", p, width = 4, height = 3)
 
-
-
+# Off road emissions decreased during 1999 - 2008
+# On Road emissions decreased during 1999 - 2008
+# Non-point emissions decreased during 1999 - 2008
+# Point emissions increased during 1999 - 2008

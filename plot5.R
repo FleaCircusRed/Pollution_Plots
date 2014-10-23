@@ -30,8 +30,11 @@ totals <- aggregate(Emissions~year, data=baltimore_vehicle_emissions, sum)
 
 # plot and save the emissions for motor vehicles by year
 p <- ggplot(totals, aes(year, Emissions)) + geom_point() + geom_line() +
-    labs(title="Baltimore Emissions caused by Motor Vehicles") + 
+    labs(title="Baltimore Motor Vehicles Emissions") + 
     ylab(expression("Total Emissions PM"[2.5])) +
     xlab("Year")
 
-ggsave("plot5.png", p)
+ggsave("plot5.png", p, width = 4.5, height = 3)
+
+# As shown in the plot, motor vehicle emissions in Baltimore have dropped between
+# 1999 - 2008
